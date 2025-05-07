@@ -1,0 +1,252 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* El contenido principal ocupa el espacio restante */
+.content {
+  flex: 1;
+  overflow-y: auto; /* Permite desplazamiento si el contenido es muy grande */
+  margin: 0 auto; 
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tablas */
+}
+
+th, td {
+  border: 1px solid #8e3b46; /* Bordó */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #8e3b46; /* Bordó */
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d9e8f5; /* Azul claro */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanco */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Gris claro al pasar el mouse */
+}
+
+/* Botones */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn-primary {
+  background-color: #8e3b46; /* Bordó */
+  color: #ffffff;
+}
+
+button.btn-primary:hover {
+  background-color: #6e2c36; /* Bordó más oscuro */
+}
+
+/* Formularios */
+.form-control {
+  border: 1px solid #8e3b46; /* Bordó */
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: #2c3e50; /* Azul oscuro */
+}
+
+/* Alertas */
+.alert-info {
+  background-color: #d9e8f5; /* Azul claro */
+  color: #2c3e50; /* Azul oscuro */
+  border: 1px solid #8e3b46; /* Bordó */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme nav {
+  background-color: #282828;
+  padding: 10px;
+}
+
+.dark-theme a {
+  color: #1db954;
+}
+
+.dark-theme button {
+  background-color: #1db954;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.dark-theme button:hover {
+  background-color: #1aa34a;
+}
+
+/* Tema claro */
+.light-theme {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.light-theme nav {
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.light-theme a {
+  color: #007bff;
+}
+
+.light-theme button {
+  background-color: #007bff;
+  color: #f6efef;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.light-theme button:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  background-color: #282828; /* Fondo oscuro por defecto */
+  color: #0532d6;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 2px 10px; /* Espaciado interno */
+}
+
+nav a {
+  color: #1db954;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.container .col-md-6 {
+  flex: 1;
+  min-width: 225px; /* Asegura que las columnas no sean demasiado pequeñas */
+}
+
+.container .col-md-6derecha {
+  flex: 1;
+  padding-top: 140px; /* Espacio superior para la columna derecha */
+  min-width: 225px; /* Asegura que las columnas no sean demasiado pequeñas */
+}
+
+
+/* Ajustar tablas al tamaño del contenedor */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tablas */
+}
+
+th, td {
+  border: 1px solid #8e3b46; /* Bordó */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #8e3b46; /* Bordó */
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d9e8f5; /* Azul claro */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanco */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Gris claro al pasar el mouse */
+}
+
+/* Tablas en tema claro */
+.light-theme table {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #2c3e50; /* Texto azul oscuro */
+}
+
+.light-theme th {
+  background-color: #d9e8f5; /* Azul claro */
+  color: #2c3e50; /* Texto azul oscuro */
+}
+
+.light-theme tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Gris claro */
+}
+
+.light-theme tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanco */
+}
+
+.light-theme tbody tr:hover {
+  background-color: #e9ecef; /* Gris más claro al pasar el mouse */
+}
+
+/* Tablas en tema oscuro */
+.dark-theme table {
+  background-color: #1e1e1e; /* Fondo negro claro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.dark-theme th {
+  background-color: #282828; /* Gris oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.dark-theme tbody tr:nth-child(even) {
+  background-color: #2c2c2c; /* Gris oscuro */
+}
+
+.dark-theme tbody tr:nth-child(odd) {
+  background-color: #1e1e1e; /* Negro claro */
+}
+
+.dark-theme tbody tr:hover {
+  background-color: #3a3a3a; /* Gris más claro al pasar el mouse */
+}
